@@ -24,7 +24,9 @@ with open(COLUMNS_PATH, "rb") as f:
     columns = pickle.load(f)
 
 # Load and preprocess original dataset
-DATA_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'Cars.csv')
+# DATA_PATH = os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'Cars.csv')
+DATA_PATH = '/app/data/Cars.csv'
+
 df_original = pd.read_csv(DATA_PATH)
 
 # Simplify 'name' column to just the brand
@@ -164,4 +166,5 @@ def predict(n_clicks, engine, owner, year, brand, transmission):
 
 # Run app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8050)
+

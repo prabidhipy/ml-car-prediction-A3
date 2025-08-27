@@ -1,8 +1,0 @@
-# version: '3.8'
-
-# services:
-#   web:
-#     build: .
-#     container_name: car_price_predictor
-#     ports:
-#       - "8050:8050"
