@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/2ec752fdcf0742bb8119f4b7c4e9b6ac/artifacts
+end_time: 1757518051892
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2ec752fdcf0742bb8119f4b7c4e9b6ac
+run_name: none_mini_xavier_0.01_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757518046708
+status: 3
+tags: []
+user_id: prabidhi

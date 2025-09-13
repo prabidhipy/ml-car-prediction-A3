@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/10525fd5c96d4d1ca438ebc2c09d6712/artifacts
+end_time: 1757752803438
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 10525fd5c96d4d1ca438ebc2c09d6712
+run_name: method-batch-lr-0.1-reg-Lasso
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757752785127
+status: 3
+tags: []
+user_id: prabidhi

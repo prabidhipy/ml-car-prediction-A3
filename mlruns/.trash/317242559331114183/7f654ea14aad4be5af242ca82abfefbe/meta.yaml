@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/317242559331114183/7f654ea14aad4be5af242ca82abfefbe/artifacts
+deleted_time: 1757672813693
+end_time: 1757595807552
+entry_point_name: ''
+experiment_id: '317242559331114183'
+lifecycle_stage: deleted
+run_id: 7f654ea14aad4be5af242ca82abfefbe
+run_name: method-batch-lr-0.1-reg-Ridge
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757595807505
+status: 4
+tags: []
+user_id: prabidhi

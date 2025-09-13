@@ -13,8 +13,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the app code
 COPY . .
 
+# Copy model folder into container
+COPY model /app/model
+
 # Expose Dash default port
 EXPOSE 8050
 
 # Run the app
-CMD ["python", "code/app.py"]
+# CMD ["python", "code/app.py"]

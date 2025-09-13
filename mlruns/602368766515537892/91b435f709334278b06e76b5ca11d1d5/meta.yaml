@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/91b435f709334278b06e76b5ca11d1d5/artifacts
+end_time: 1757597823631
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 91b435f709334278b06e76b5ca11d1d5
+run_name: poly_False-Normal-mini-lr_0.01-init_zeros-momentum_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757597823625
+status: 3
+tags: []
+user_id: prabidhi

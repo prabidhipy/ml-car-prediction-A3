@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/393a41b9183d486db443f2a45a0e0d8d/artifacts
+end_time: 1757601812388
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 393a41b9183d486db443f2a45a0e0d8d
+run_name: poly_True-Lasso-mini-lr_0.0001-init_xavier-momentum_True
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757601794785
+status: 3
+tags: []
+user_id: prabidhi

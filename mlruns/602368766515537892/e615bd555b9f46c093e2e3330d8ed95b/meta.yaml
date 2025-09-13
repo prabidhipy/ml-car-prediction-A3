@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/e615bd555b9f46c093e2e3330d8ed95b/artifacts
+end_time: 1757597681748
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: e615bd555b9f46c093e2e3330d8ed95b
+run_name: poly_True-Lasso-mini-lr_0.001-init_zeros-momentum_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757597679075
+status: 3
+tags: []
+user_id: prabidhi

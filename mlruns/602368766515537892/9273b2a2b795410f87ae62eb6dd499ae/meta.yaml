@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/9273b2a2b795410f87ae62eb6dd499ae/artifacts
+end_time: 1757601619028
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 9273b2a2b795410f87ae62eb6dd499ae
+run_name: poly_True-Lasso-batch-lr_0.0001-init_xavier-momentum_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757601601291
+status: 3
+tags: []
+user_id: prabidhi

@@ -1,0 +1,53 @@
+artifact_path: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/models/m-05a2d91c9c494e45ba2a34a0e6b5d88a/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+is_signature_from_type_hint: false
+mlflow_version: 3.3.2
+model_id: m-05a2d91c9c494e45ba2a34a0e6b5d88a
+model_size_bytes: 16797
+model_uuid: m-05a2d91c9c494e45ba2a34a0e6b5d88a
+prompts: null
+run_id: c98367acadf54d34882ebcf1cff81b59
+signature:
+  inputs: '[{"type": "double", "name": "engine", "required": true}, {"type": "double",
+    "name": "owner", "required": true}, {"type": "double", "name": "year", "required":
+    true}, {"type": "boolean", "name": "brand_Ashok", "required": true}, {"type":
+    "boolean", "name": "brand_Audi", "required": true}, {"type": "boolean", "name":
+    "brand_BMW", "required": true}, {"type": "boolean", "name": "brand_Chevrolet",
+    "required": true}, {"type": "boolean", "name": "brand_Daewoo", "required": true},
+    {"type": "boolean", "name": "brand_Datsun", "required": true}, {"type": "boolean",
+    "name": "brand_Fiat", "required": true}, {"type": "boolean", "name": "brand_Force",
+    "required": true}, {"type": "boolean", "name": "brand_Ford", "required": true},
+    {"type": "boolean", "name": "brand_Honda", "required": true}, {"type": "boolean",
+    "name": "brand_Hyundai", "required": true}, {"type": "boolean", "name": "brand_Isuzu",
+    "required": true}, {"type": "boolean", "name": "brand_Jaguar", "required": true},
+    {"type": "boolean", "name": "brand_Jeep", "required": true}, {"type": "boolean",
+    "name": "brand_Kia", "required": true}, {"type": "boolean", "name": "brand_Land",
+    "required": true}, {"type": "boolean", "name": "brand_Lexus", "required": true},
+    {"type": "boolean", "name": "brand_MG", "required": true}, {"type": "boolean",
+    "name": "brand_Mahindra", "required": true}, {"type": "boolean", "name": "brand_Maruti",
+    "required": true}, {"type": "boolean", "name": "brand_Mercedes-Benz", "required":
+    true}, {"type": "boolean", "name": "brand_Mitsubishi", "required": true}, {"type":
+    "boolean", "name": "brand_Nissan", "required": true}, {"type": "boolean", "name":
+    "brand_Opel", "required": true}, {"type": "boolean", "name": "brand_Renault",
+    "required": true}, {"type": "boolean", "name": "brand_Skoda", "required": true},
+    {"type": "boolean", "name": "brand_Tata", "required": true}, {"type": "boolean",
+    "name": "brand_Toyota", "required": true}, {"type": "boolean", "name": "brand_Volkswagen",
+    "required": true}, {"type": "boolean", "name": "brand_Volvo", "required": true},
+    {"type": "boolean", "name": "transmission_Manual", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-09-12 08:45:11.569458'

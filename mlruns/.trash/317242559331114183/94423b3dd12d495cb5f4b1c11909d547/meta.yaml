@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/317242559331114183/94423b3dd12d495cb5f4b1c11909d547/artifacts
+deleted_time: 1757672813693
+end_time: 1757596422830
+entry_point_name: ''
+experiment_id: '317242559331114183'
+lifecycle_stage: deleted
+run_id: 94423b3dd12d495cb5f4b1c11909d547
+run_name: method-batch-lr-0.1-reg-ElasticNet
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757596413670
+status: 3
+tags: []
+user_id: prabidhi

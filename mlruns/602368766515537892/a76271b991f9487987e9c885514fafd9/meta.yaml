@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/a76271b991f9487987e9c885514fafd9/artifacts
+end_time: 1757669925585
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: a76271b991f9487987e9c885514fafd9
+run_name: Fold-0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757669918213
+status: 3
+tags: []
+user_id: prabidhi

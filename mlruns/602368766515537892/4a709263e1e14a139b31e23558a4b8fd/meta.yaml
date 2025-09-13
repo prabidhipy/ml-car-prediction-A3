@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/4a709263e1e14a139b31e23558a4b8fd/artifacts
+end_time: 1757605300047
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 4a709263e1e14a139b31e23558a4b8fd
+run_name: poly_False-Normal-sto-lr_0.0001-init_xavier-momentum_True
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757605250183
+status: 3
+tags: []
+user_id: prabidhi

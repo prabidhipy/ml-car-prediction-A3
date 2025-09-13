@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/cff386a602fd421aac6c01a34615f228/artifacts
+deleted_time: 1757773345013
+end_time: 1757763356907
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: deleted
+run_id: cff386a602fd421aac6c01a34615f228
+run_name: poly_False-Lasso-batch-lr_0.001-init_xavier-momentum_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757763335233
+status: 3
+tags: []
+user_id: prabidhi

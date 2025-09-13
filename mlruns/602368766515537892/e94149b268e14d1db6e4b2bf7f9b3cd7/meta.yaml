@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/e94149b268e14d1db6e4b2bf7f9b3cd7/artifacts
+end_time: 1757606784626
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: e94149b268e14d1db6e4b2bf7f9b3cd7
+run_name: poly_False-Ridge-mini-lr_0.01-init_xavier-momentum_False
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757606770626
+status: 3
+tags: []
+user_id: prabidhi

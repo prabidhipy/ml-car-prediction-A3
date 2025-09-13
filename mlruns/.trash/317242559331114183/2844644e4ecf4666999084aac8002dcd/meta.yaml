@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/317242559331114183/2844644e4ecf4666999084aac8002dcd/artifacts
+deleted_time: 1757672813693
+end_time: 1757594565177
+entry_point_name: ''
+experiment_id: '317242559331114183'
+lifecycle_stage: deleted
+run_id: 2844644e4ecf4666999084aac8002dcd
+run_name: none_mini_zeros_0.01_True
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757594553268
+status: 3
+tags: []
+user_id: prabidhi

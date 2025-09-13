@@ -1,11 +1,14 @@
-version: '3.8'
-
 services:
   dash-app:
-    build: .
+    command: python code/app.py
+    image: prabidhipyakurel/car-price-prediction-2:a2.0
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8050:8050"
     volumes:
-      - ../data:/app/data
+      - ../data:/app/data  #relative path from docker-compose.yaml
+      - ./model:/app/model  # local model folder
     environment:
       - PYTHONUNBUFFERED=1

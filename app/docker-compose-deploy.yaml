@@ -1,0 +1,36 @@
+services:
+  dash-app:
+    command: python /app/code/app.py
+    image: prabidhipyakurel/car-price-prediction-2:a2.0
+    ports:
+      - "8050:8050"
+    volumes:
+      - /home/st126380/mydata:/app/data #relative path from docker-compose.yaml
+      - /home/st126380/mydata/model:/app/model
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HOST=0.0.0.0
+      - PORT=8050
+
+    labels:
+      # Allow Traefik to talk with your service
+      - traefik.enable=true
+      # Tell Traefik to use port 80
+      - traefik.http.services.dash-app-st126380.loadbalancer.server.port=8050
+      # This config you domain name. By default, your subdomain is dash-app-st126380
+      # If you which to change the subdomain name, you uncomment the below configuration
+      - traefik.http.routers.dash-app-st126380.rule=Host(`st126380.ml.brain.cs.ait.ac.th`)
+      # Below is for enable SSL.
+      - traefik.http.routers.dash-app-st126380.tls=true
+      - traefik.http.routers.dash-app-st126380.tls.certresolver=production
+      - traefik.http.routers.dash-app-st126380.entrypoints=websecure
+    # This define network. You would need to keep it like this.
+    networks:
+      - default
+      - traefik_default
+
+# Keep it like this too.
+networks:
+  default:
+  traefik_default:
+    external: true

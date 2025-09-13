@@ -1,0 +1,10 @@
+artifact_location: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/models/m-c83d10f5123745d6a4c501df3cbd7b56/artifacts
+creation_timestamp: 1757666726254
+experiment_id: '602368766515537892'
+last_updated_timestamp: 1757666727671
+model_id: m-c83d10f5123745d6a4c501df3cbd7b56
+model_type: null
+name: model
+source_run_id: 351d1924cabd45c7bbd7ba72ad3e179e
+status: 2
+status_message: null

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/ce5af5d5236d455c8b5f98e82f95a74f/artifacts
+end_time: 1757518055995
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ce5af5d5236d455c8b5f98e82f95a74f
+run_name: Fold-1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757518053552
+status: 3
+tags: []
+user_id: prabidhi

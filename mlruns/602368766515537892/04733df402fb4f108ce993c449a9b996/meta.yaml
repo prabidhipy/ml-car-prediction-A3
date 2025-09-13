@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/prabidhi/Desktop/ml-tasks/ml-assignment-2/mlruns/602368766515537892/04733df402fb4f108ce993c449a9b996/artifacts
+end_time: 1757604567546
+entry_point_name: ''
+experiment_id: '602368766515537892'
+lifecycle_stage: active
+run_id: 04733df402fb4f108ce993c449a9b996
+run_name: poly_True-Ridge-sto-lr_0.001-init_zeros-momentum_True
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1757604495505
+status: 3
+tags: []
+user_id: prabidhi
