@@ -13,7 +13,12 @@ except ImportError:
 
 # --- Load and preprocess original dataset for dropdowns ---
 # This part remains to populate the UI with options
-DATA_PATH = 'data/Cars.csv'
+# DATA_PATH = 'data/Cars.csv'
+
+# --- Get the directory of the current script (app/code) ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# --- Go up one level (to app/) and then into the data folder ---
+DATA_PATH = os.path.join(os.path.dirname(BASE_DIR),'..', 'data', 'Cars.csv')
 
 try:
     df_original = pd.read_csv(DATA_PATH)
