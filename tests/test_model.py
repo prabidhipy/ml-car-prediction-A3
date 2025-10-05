@@ -1,5 +1,6 @@
 import pytest
 import numpy as np
+import pandas as pd  
 import model  
 
 feature_vals = [1200, 2016, 1, 0, 'BMW']
