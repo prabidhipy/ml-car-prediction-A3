@@ -2,7 +2,6 @@ import pytest
 import numpy as np
 import model  
 
-
 feature_vals = [1200, 2016, 1, 0, 'BMW']
 
 @pytest.fixture
@@ -15,7 +14,8 @@ def mock_model(monkeypatch):
 def test_model_input_shape(mock_model):
     X = model.get_X(*feature_vals)
     assert X.shape[1] == 35
-    assert np.issubdtype(X.dtype, np.number)
+    # Check that all columns are numeric
+    assert all(np.issubdtype(dt, np.number) for dt in X.dtypes)
 
 def test_model_output_shape(mock_model):
     model_instance = model.load_model()   
