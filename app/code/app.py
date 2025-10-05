@@ -16,9 +16,8 @@ except ImportError:
 # DATA_PATH = 'data/Cars.csv'
 
 # --- Get the directory of the current script (app/code) ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# --- Go up one level (to app/) and then into the data folder ---
-DATA_PATH = os.path.join(os.path.dirname(BASE_DIR),'..', 'data', 'Cars.csv')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # /app/code
+DATA_PATH = os.path.join(BASE_DIR, "..", "data", "Cars.csv") 
 
 try:
     df_original = pd.read_csv(DATA_PATH)

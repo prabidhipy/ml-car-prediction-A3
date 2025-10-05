@@ -326,7 +326,7 @@ def get_X(engine, owner, year, transmission, brand):
 # Load MLflow model
 # --------------------------
 def load_model():
-    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "http://admin:password@mlflow.ml.brain.cs.ait.ac.th/")
+    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "https://admin:password@mlflow.ml.brain.cs.ait.ac.th/")
     username = os.getenv("MLFLOW_TRACKING_USERNAME")
     password = os.getenv("MLFLOW_TRACKING_PASSWORD")
 

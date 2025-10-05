@@ -1,0 +1,16 @@
+services:
+  dash-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: prabidhipyakurel/car-price-prediction-3:latest
+    ports:
+      - "8050:8050"
+    volumes:
+      - ./app/data:/app/data
+      - ./app/Model:/app/Model
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python code/app.py
