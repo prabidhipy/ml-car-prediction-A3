@@ -32,8 +32,8 @@ jobs:
 
       - name: Run unit tests
         run: |
-          export PYTHONPATH=$(pwd)/code
-          python -m pytest tests/ -v
+          export PYTHONPATH=$(pwd)/app/code
+          python -m pytest ./tests/ -v
 
   deploy:
     needs: test

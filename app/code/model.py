@@ -251,13 +251,6 @@ def one_hot_transform(encoder, dataframe, feature):
 # --------------------------
 # Prepare feature vector
 # --------------------------
-import pandas as pd
-import numpy as np
-import logging
-
-# --------------------------
-# Prepare feature vector
-# --------------------------
 def get_X(engine, owner, year, transmission, brand):
     """
     Prepare the feature vector for the ML model.
@@ -303,7 +296,6 @@ def get_X(engine, owner, year, transmission, brand):
 
     # 4. One-hot encode brand (to match training)
     brand_encoded = brand_encoder.transform(df_input[['brand']]).toarray()
-    # **FIX**: Use the same column names as in the notebook (unprefixed)
     brand_cats = list(brand_encoder.categories_[0][1:])
     df_brand = pd.DataFrame(brand_encoded, columns=brand_cats)
 
@@ -311,13 +303,18 @@ def get_X(engine, owner, year, transmission, brand):
     df_input = df_input.drop(columns=['brand']).reset_index(drop=True)
     df_input = pd.concat([df_input, df_brand], axis=1)
 
-    # 5. Scale numeric columns - **THIS IS THE MAIN FIX**
-    # The scaler was trained on 'engine', 'owner', and 'year' in the notebook.
+    # 5. Scale numeric columns 
     num_cols = ['engine', 'owner', 'year']
     df_input[num_cols] = scaler.transform(df_input[num_cols])
 
-    # 6. Reorder columns to match training order
-    final_cols = ['engine', 'owner', 'transmission', 'year'] + brand_cats
+    # 6. RENAME transmission to transmission_1 to match training data schema
+    df_input.rename(columns={'transmission': 'transmission_1'}, inplace=True)
+    
+    # 7. ***FIX***: Convert the int (0/1) to a boolean (False/True) to match the schema.
+    df_input['transmission_1'] = df_input['transmission_1'].astype(bool)
+    
+    # 8. Reorder columns to match the exact order from the training notebook
+    final_cols = ['engine', 'owner', 'year'] + brand_cats + ['transmission_1']
     df_processed = df_input.reindex(columns=final_cols, fill_value=0)
 
     return df_processed
@@ -326,7 +323,7 @@ def get_X(engine, owner, year, transmission, brand):
 # Load MLflow model
 # --------------------------
 def load_model():
-    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "https://admin:password@mlflow.ml.brain.cs.ait.ac.th/")
+    mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "http://admin:password@mlflow.ml.brain.cs.ait.ac.th/")
     username = os.getenv("MLFLOW_TRACKING_USERNAME")
     password = os.getenv("MLFLOW_TRACKING_PASSWORD")
 
@@ -370,17 +367,12 @@ def predict_selling_price(engine, owner, year, transmission, brand):
         raise RuntimeError("MLflow model is not loaded. Cannot make predictions.")
 
     X = get_X(engine, owner, year, transmission, brand)
-
-    # **FIX**: Convert DataFrame to 'object' type to match the MLflow model's signature
-    X = X.astype(object)
-    
     raw_pred = mlflow_model.predict(X)[0]
     
     class_map = ["Cheap (Lowest 25%)", "Average (25-50%)", "Expensive (50-75%)", "Very Expensive (Top 25%)"]
     label = class_map[int(raw_pred)]
     
     return raw_pred, label
-    
 
 # Example Usage
 if __name__ == '__main__':
