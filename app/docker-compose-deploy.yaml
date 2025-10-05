@@ -5,7 +5,7 @@ services:
     ports:
       - "8050:8050"
     volumes:
-      - /home/st126380/mydata:/app/data #relative path from docker-compose.yaml
+      - /home/st126380/mydata:/app/data #rgit remote add origin https://github.com/prabidhipy/car-price-prediction-a2.gitelative path from docker-compose.yaml
       - /home/st126380/mydata/model:/app/model
     environment:
       - PYTHONUNBUFFERED=1
